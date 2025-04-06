@@ -3,9 +3,16 @@
  */
 export interface IUserOptions {
   uid: number;
+  name: string;
+  phone?: string;
+  email?: string;
 }
 export interface GameUser {
   uid: string;
+  name: string;
+  phone?: string;
+  email?: string;
+  password?: string;
 }
 
 export interface WeatherInfo {

@@ -7,6 +7,7 @@ import { ReportMiddleware } from './middleware/report.middleware';
 import * as view from '@midwayjs/view-nunjucks';
 import { WeatherErrorFilter } from './filter/weather.filter';
 import * as crossDomain from '@midwayjs/cross-domain';
+import * as sequelize from '@midwayjs/sequelize';
 
 @Configuration({
   imports: [
@@ -18,6 +19,7 @@ import * as crossDomain from '@midwayjs/cross-domain';
     },
     view,
     crossDomain,
+    sequelize,
   ],
   importConfigs: [join(__dirname, './config')],
 })
